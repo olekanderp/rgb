@@ -31,7 +31,7 @@ export default {
     async send(){
       console.log("send")
       try {
-        const response = await axios.get('https://catfact.ninja/fact');
+        const response = await axios.get('http://localhost:3000/api/data');
         console.log(response)
       } catch (error) {
         console.error('Error fetching data:', error);
